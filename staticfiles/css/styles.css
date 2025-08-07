@@ -1,0 +1,339 @@
+/* Genel Stiller */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Header */
+header {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+    margin: 0 0 15px 0;
+    color: #222;
+}
+
+/* Buton */
+.cta-button {
+    display: inline-block;
+    width: 280px;
+    padding: 16px;
+    margin: 15px auto 0;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #c0392b 0%, #a53125 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+.cta-button:active {
+    transform: translateY(1px);
+}
+
+/* Promosyon Kartları */
+.promotion {
+    display: flex;                  /* Esnek kutu düzeni */
+    justify-content: space-between; /* Kartlar arası eşit boşluk */
+    padding: 30px 5%;              /* Üst-alt 30px, sağ-sol %5 boşluk */
+    margin: 40px auto;             /* Dış boşluk ve ortala */
+    max-width: 1200px;             /* Maksimum genişlik */
+    gap: 30px;                     /* Kartlar arası 30px boşluk */
+}
+
+/* TEK KART STİLİ */
+.promo-item {
+    flex: 1;                       /* Eşit genişlik dağılımı */
+    min-width: 300px;              /* Minimum kart genişliği */
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 480px;                 /* Sabit yükseklik */
+    transition: all 0.3s ease;     /* Animasyon */
+}
+
+.promo-item:hover {
+    transform: translateY(-10px);
+}
+
+.promo-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.promo-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 20px 0 15px;
+    color: #222;
+}
+
+.promo-item p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.promo-item .car-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Bölüm Başlıkları */
+.section-header {
+    text-align: center;
+    margin: 50px auto 30px;
+    padding: 20px;
+}
+
+.section-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    letter-spacing: -0.3px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    color: #222;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    border-radius: 2px;
+}
+
+/* İçerik Bölümleri */
+.content-section {
+    padding: 50px 40px;
+    margin: 40px auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 1000px;
+    border: 1px solid #ddd;
+}
+
+.content-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #222;
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    border-radius: 2px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sosyal Medya */
+.social-media {
+    text-align: center;
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 800px;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.social-media a:hover {
+    color: white;
+    background-color: #e74c3c;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+}
+
+.sahibinden-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: #e74c3c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    color: #555;
+    text-align: center;
+    padding: 30px;
+    margin-top: 70px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    header, 
+    .content-section, 
+    .social-media, 
+    footer {
+        background-color: #121212;
+        border-color: #333;
+    }
+
+    header h1,
+    .content-section h2,
+    .section-header h2,
+    .promo-item h3 {
+        color: #ffffff;
+    }
+
+    .content-section p,
+    .promo-item p {
+        color: #b0b0b0;
+    }
+
+    .promo-item {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+
+    .social-media a,
+    .sahibinden-logo {
+        background-color: #333;
+        color: #e74c3c;
+        border-color: #444;
+    }
+
+    .social-media a:hover,
+    .sahibinden-logo:hover {
+        background-color: #e74c3c;
+        color: white;
+    }
+}
+@media (max-width: 1024px) {
+    .promotion {
+        flex-wrap: wrap;           /* Kartları alt satıra kaydır */
+        justify-content: center;   /* Ortala */
+    }
+    .promo-item {
+        flex: 0 1 calc(50% - 30px); /* 2'li sırala (30px boşluk düş) */
+        margin-bottom: 30px;       /* Alt boşluk */
+    }
+}
+
+/* MOBİL DÜZENİ (768px altı) */
+@media (max-width: 768px) {
+    .promo-item {
+        flex: 0 1 100%;            /* Tek sütun */
+    }
+}
